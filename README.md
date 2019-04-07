@@ -67,21 +67,23 @@ Losing this offline laptop should not compromise your funds. But to protect agai
 
 ## How to spend
 
+Get another brand-new online laptop. Configure it to connect to the Internet through TOR only. Don't install anything on it. Don't even open a web browser. Using a USB stick, install Electrum. Create a watch-only wallet on this laptop using your master public keys A, B, and C.
+
+Create a transaction on the online laptop. Scan its QR code and keep the QR code on your phone to later import to the _offline laptop_.
+
 You have seed C on your phone. Now acquire seed A and master public key B or acquire seed B and master public key A. You can acquire seed A from one of its holders or acquire seed B from the safe deposit box. You can acquire the master public keys from any location where you have one of your seeds. 
 
 Using two seeds and one master public key, restore your wallet on the offline laptop.
 
-Create a transaction on the offline laptop and sign it. Display the transaction as a QR code. Scan the transaction using your phone. 
+Import the transaction from your phone to the offline laptop and sign it. Scan the _signed_ transaction's QR code and keep the QR code on your phone to later import into the _online laptop_. 
 
 Delete your wallet from the offline laptop.
 
-Get another brand-new online laptop. Configure it to connect to the Internet through TOR only. Don't install anything on it. Don't even open a web browser. Using a USB stick, install Electrum.
-
-Using master public keys A, B, and C, restore a watch-only version of your wallet on the online laptop. Import the signed transaction to the online laptop. Broadcast transaction.
+Import the signed transaction to the online laptop. Broadcast transaction.
 
 ## How to receive
 
-Generate an address using the watch-only online laptop. Display the address as a QR code. Scan it with your phone. Then share it.
+Everytime you want to receive, generate an address using the watch-only online laptop. Display the address as a QR code. Scan it with your phone. Then share it.
 
 ## How you're protected
 
