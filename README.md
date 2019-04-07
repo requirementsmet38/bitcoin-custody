@@ -29,19 +29,15 @@ Create copies of seeds A and B and master public keys A and B, so that you have 
 * Seed A copy 1
 * Seed A copy 2
 * Seed B copy 1
-* Seed B copy 2
 * Master public key A copy 1
 * Master public key A copy 2
 * Master public key A copy 3
-* Master public key A copy 4
 * Master public key B copy 1
 * Master public key B copy 2
 * Master public key B copy 3
-* Master public key B copy 4
 * Master public key C copy 1
 * Master public key C copy 2
 * Master public key C copy 3
-* Master public key C copy 4
 
 (Notice that we haven't created any metal sheets for seed C. We'll get to seed C in a bit.)
 
@@ -62,13 +58,8 @@ Now group your copies as follows:
   * Master public key A copy 3
   * Master public key B copy 3
   * Master public key C copy 3
-* Group 4:
-  * Seed B copy 2
-  * Master public key A copy 4
-  * Master public key B copy 4
-  * Master public key C copy 4
   
-Give group 1 and 2 to two different people you trust. Put group 3 and 4 in two different safe deposit boxes. As for seed C, store it on your phone, locked by a memorizeable brain-password and backed up to an online cloud.
+Give group 1 and 2 to two different people you trust. Put group 3 in a safe deposit box. As for seed C, store it on your phone, locked by a memorizeable brain-password and backed up to an online cloud.
 
 Delete your wallet from the offline laptop. 
 
@@ -76,7 +67,7 @@ Losing this offline laptop should not compromise your funds. But to protect agai
 
 ## How to spend
 
-You have seed C on your phone. Now acquire seed A and master public key B or acquire seed B and master public key A. You can acquire seed A from one of its holders or acquire seed B from one of the safe deposit boxes. You can acquire the master public keys from any location where you have one of your seeds. 
+You have seed C on your phone. Now acquire seed A and master public key B or acquire seed B and master public key A. You can acquire seed A from one of its holders or acquire seed B from the safe deposit box. You can acquire the master public keys from any location where you have one of your seeds. 
 
 Using two seeds and one master public key, restore your wallet on the offline laptop.
 
@@ -114,7 +105,7 @@ You need 2 of 3 keys. You have backups of each of the 3 keys and each of the mas
 
 You want your heirs to be able to access your funds when you die.
 
-Your heirs can be seed A holders. If they're not, then they can contact seed A holders. They can prove your death and access your safe deposit boxes. Now they have enough information to unlock and retrieve your estate.
+Your heirs can be seed A holders. If they're not, then they can contact seed A holders. They can prove your death and access your safe deposit box. Now they have enough information to unlock and retrieve your estate.
 
 Additionally, if you manage your digital life correctly, they may be able to retrieve seed C.
 
@@ -124,7 +115,7 @@ Additionally, if you manage your digital life correctly, they may be able to ret
 
 Seed A holders cannot collude because they have copies of the same key. 
 
-### Banks or safe deposit box businesses withholding access
+### Banks or safe deposit box business withholding access
 
 That would not be a problem because you can use seed A instead of seed B.
 
