@@ -1,2 +1,149 @@
-# bitcoin-custody
-Bitcoin High-Value Custody Plan Using Electrum Multisig
+# Bitcoin High-Value Custody Plan Using Electrum Multisig
+
+The plan offers protection from the following threats:
+
+* Computer getting hacked
+* Being robbed at gunpoint
+* One or more copies of keys being lost
+* Funds becoming inaccessible to heirs due to your death
+
+I'll share the plan below. Please poke holes at it so we can improve it.
+
+The plan uses 2-of-3 multisig HD wallet. It maintains your full sovereignty. But it also puts some distance between you and direct access to the funds. This is to thwart in-person attacks.
+
+Here we go...
+
+## Generate and store your keys
+
+Get a brand-new offline-only laptop. Install Electrum on the laptop (using a USB stick). Don't install anything else. Using this offline laptop, generate three seeds and their corresponding master public keys:
+
+* Seed A
+* Master public key A
+* Seed B
+* Master public key B
+* Seed C
+* Master public key C
+
+Create copies of seeds A and B and master public keys A and B, so that you have the following:
+
+* Seed A copy 1
+* Seed A copy 2
+* Seed B copy 1
+* Seed B copy 2
+* Master public key A copy 1
+* Master public key A copy 2
+* Master public key A copy 3
+* Master public key A copy 4
+* Master public key B copy 1
+* Master public key B copy 2
+* Master public key B copy 3
+* Master public key B copy 4
+* Master public key C copy 1
+* Master public key C copy 2
+* Master public key C copy 3
+* Master public key C copy 4
+
+(Notice that we haven't created any metal sheets for seed C. We'll get to seed C in a bit.)
+
+Now group your copies as follows:
+
+* Group 1:
+  * Seed A copy 1
+  * Master public key A copy 1
+  * Master public key B copy 1
+  * Master public key C copy 1
+* Group 2:
+  * Seed A copy 2
+  * Master public key A copy 2
+  * Master public key B copy 2
+  * Master public key C copy 2
+* Group 3:
+  * Seed B copy 1
+  * Master public key A copy 3
+  * Master public key B copy 3
+  * Master public key C copy 3
+* Group 4:
+  * Seed B copy 2
+  * Master public key A copy 4
+  * Master public key B copy 4
+  * Master public key C copy 4
+  
+Give group 1 and 2 to two different people you trust. Put group 3 and 4 in two different safe deposit boxes. As for seed C, store it on your phone, locked by a memorizeable brain-password and backed up to an online cloud.
+
+Delete your wallet from the offline laptop. 
+
+Losing this offline laptop should not compromise your funds. But to protect against malware/spyware and to ensure that this laptop stays offline, don't let anyone access it. If you suspect someone had access to it, get another one.
+
+## How to spend
+
+You have seed C on your phone. Now acquire seed A and master public key B or acquire seed B and master public key A. You can acquire seed A from one of its holders or acquire seed B from one of the safe deposit boxes. You can acquire the master public keys from any location where you have one of your seeds. 
+
+Using two seeds and one master public key, restore your wallet on the offline laptop.
+
+Create a transaction on the offline laptop and sign it. Display the transaction as a QR code. Scan the transaction using your phone. 
+
+Delete your wallet from the offline laptop.
+
+Get another brand-new online laptop. Configure it to connect to the Internet through TOR only. Don't install anything on it. Don't even open a web browser. Using a USB stick, install Electrum.
+
+Using master public keys A, B, and C, restore a watch-only version of your wallet on the online laptop. Import the signed transaction to the online laptop. Broadcast transaction.
+
+## How to receive
+
+Generate an address using the watch-only online laptop. Display the address as a QR code. Scan it with your phone. Then share it.
+
+## How you're protected
+
+### Computer getting hacked
+
+Very little chance of your online laptop getting hacked since there's nothing on it but Electrum. Even if it gets hacked, the worst that can happen is that your wallet becomes trackable but your funds are still secure because your online wallet has your public keys but not your seeds.
+
+Your offline laptop should never get hacked because it never connects to the internet.
+
+### Being robbed at gunpoint
+
+To be able to transfer funds to the robber, you need seed A or B in addition to seed C. You can't get access to seed A or B without talking to at least one other person.
+
+This increases risk on the robber because the robber would have to wait for you to make a phone call to retrieve seed A or go to a place of business to retrieve seed B. From the robbers point of view, these are actions that could result in alerting the authorities. They could also increasing the time to execute the robbery and give the authorities more time to react. A robber is more likely to call off the attack at this point.
+
+### One key being lost
+
+You need 2 of 3 keys. You have backups of each of the 3 keys and each of the master public keys. There is very little chance of losing access to funds due to key loss.
+
+### Funds becoming inaccessible to heirs due to your death
+
+You want your heirs to be able to access your funds when you die.
+
+Your heirs can be seed A holders. If they're not, then they can contact seed A holders. They can prove your death and access your safe deposit boxes. Now they have enough information to unlock and retrieve your estate.
+
+Additionally, if you manage your digital life correctly, they may be able to retrieve seed C.
+
+## Additional protections
+
+### Collusion of seed A holders
+
+Seed A holders cannot collude because they have copies of the same key. 
+
+### Banks or safe deposit box businesses withholding access
+
+That would not be a problem because you can use seed A instead of seed B.
+
+## Unmitigated or new threats due to this plan
+
+This plan is pretty good but it's still not completely without flaws:
+
+### Forgetting to delete the wallet from offline laptop
+
+There's a chance that you may forget to delete the wallet from the offline laptop. If in that case someone gets physical access to your offline laptop, you will lose your funds.
+
+It would be great if Electrum offered the option to not create a wallet file. Such an option would improve this plan.
+
+### Hard disk data recovery
+
+Electrum stores wallet file on disk. Even if you delete the wallet, it can be retrieved using data recovery techniques.(?)
+
+### Robber forces you to make a phone call to a seed A holder
+
+A very reckless robber might be willing to have you phone another person to receive seed A and send the funds. 
+
+To protect against this threat, you could store seed A in a safe deposit box in a different country. Doing that would increase resiliency to catastrophic political or natural events in one country.
