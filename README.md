@@ -97,7 +97,7 @@ Your offline laptop should never get hacked because it never connects to the int
 
 To be able to transfer funds to the robber, you need seed A or B in addition to seed C. You can't get access to seed A or B without talking to at least one other person.
 
-This increases risk on the robber because the robber would have to wait for you to make a phone call to retrieve seed A or go to a place of business to retrieve seed B. From the robbers point of view, these are actions that could result in alerting the authorities. They could also increasing the time to execute the robbery and give the authorities more time to react. A robber is more likely to call off the attack at this point.
+This is risky for the robber because he would have to wait for you acquire seed A or B. The actions needed to acquire seed A or B could result in authorities being alerted. These actions prolong the robbery and give the authorities more time to react. A robber is more likely to call off the attack at this point.
 
 ### One key being lost
 
