@@ -39,7 +39,7 @@ Create copies of seeds A and B and master public keys A and B, so that you have 
 * Master public key C copy 2
 * Master public key C copy 3
 
-(Notice that we haven't created any metal sheets for seed C. We'll get to seed C in a bit.)
+(Notice that we haven't created any copies for seed C. We'll get to seed C in a bit.)
 
 Now group your copies as follows:
 
